@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Закритий Zoom «Шлях до мільйона» 5 листопада: три реальні запуски з маленьких блогів і схема твого першого.">
+<meta property="og:title" content="Шлях до мільйона · закритий Zoom 5.11">
+<meta property="og:description" content="Три реальні запуски з маленьких блогів і схема твого першого. 699 грн для учасниць диктанту до вівторка.">
+<meta property="og:image" content="img/ivanna-portrait.jpg">
+<link rel="icon" href="img/lemon.png" type="image/png">
+<style>html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Шлях до мільйона</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Manrope:wght@400;500;700;800&display=swap">
+<style>
+/* Layout: one column, alternating deep-red and cream bands; hero and offer in red, reading sections in cream. */
+:root{
+  --bg:#f7efe6;        /* cream page */
+  --bg-2:#fbf6f0;      /* lighter card on cream */
+  --fg:#1c1212;
+  --muted:#5e4a44;
+  --red:#a3191b;
+  --red-deep:#5e0e10;
+  --gold:#d6a04a;
+  --gold-soft:#f0c878;
+  --line:rgba(163,25,27,.18);
+  --band-fg:#f7efe6;
+  --band-muted:#f2d9c4;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Manrope","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#180809;--bg-2:#24100f;--fg:#f7efe6;--muted:#d9bfb6;--red:#e05a5c;--red-deep:#4a0b0d;--gold:#e2be73;--gold-soft:#f0c878;--line:rgba(240,200,120,.22);--band-fg:#f7efe6;--band-muted:#f2d9c4;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#180809;--bg-2:#24100f;--fg:#f7efe6;--muted:#d9bfb6;--red:#e05a5c;--red-deep:#4a0b0d;--gold:#e2be73;--gold-soft:#f0c878;--line:rgba(240,200,120,.22);--band-fg:#f7efe6;--band-muted:#f2d9c4;color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--red-deep)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;line-height:1.05;text-transform:uppercase}
+h2{font-size:clamp(30px,6vw,44px);font-weight:700}
+h3{font-size:22px;font-weight:600;text-transform:none;font-family:var(--body);letter-spacing:0}
+p{margin:0}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band{padding-block:56px}
+.band-red{background:linear-gradient(160deg,#9c1a1c 0%,#5e0e10 70%,#4a0b0d 100%);color:var(--band-fg)}
+.band-red .eyebrow{color:var(--gold-soft)}
+.eyebrow{font-family:var(--body);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.stack{display:grid;gap:18px}
+.stack-lg{display:grid;gap:28px}
+
+/* hero */
+.hero{padding-block:48px 56px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;display:grid;gap:26px}
+.hero-text{display:grid;gap:26px;min-width:0}
+.hero-photo{margin:0;position:relative;min-width:0;justify-self:center;width:100%;max-width:440px;display:grid;gap:16px}
+.photo-stack{position:relative;padding-bottom:70px}
+.hero-photo .portrait{width:100%;height:auto;border-radius:24px;border:1px solid rgba(240,200,120,.35);box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.hero-photo .shot{position:absolute;left:-4px;bottom:0;width:74%;height:auto;border-radius:14px;border:1px solid rgba(240,200,120,.45);box-shadow:0 18px 40px rgba(0,0,0,.5);transform:rotate(-3deg);transform-origin:left bottom;background:#fff}
+.hero-photo figcaption{display:grid;gap:8px;padding:16px 18px;border-radius:16px;background:rgba(28,18,18,.55);border:1px solid rgba(240,200,120,.3);font-size:14px;line-height:1.45;color:#f2d9c4}
+.hero-photo figcaption b{font-family:var(--display);text-transform:uppercase;font-size:20px;letter-spacing:.03em;color:#f0c878;line-height:1}
+.hero-photo figcaption strong{color:#f7efe6;font-weight:800}
+.hero h1 .lemon{display:inline-block;width:1.25em;height:auto;vertical-align:-.22em;margin-left:.08em;transform:rotate(14deg);transform-origin:50% 90%;filter:drop-shadow(0 10px 18px rgba(0,0,0,.35));animation:lemon-swing 2.8s ease-in-out infinite}
+@keyframes lemon-swing{0%,100%{transform:rotate(14deg) translateY(0)}25%{transform:rotate(-8deg) translateY(-6%)}50%{transform:rotate(18deg) translateY(0)}75%{transform:rotate(-4deg) translateY(-3%)}}
+@media (min-width:820px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:40px}.hero .hero-text h1{font-size:clamp(44px,5.6vw,66px)}.hero-photo{max-width:400px;justify-self:center}.photo-stack{padding-bottom:80px}}
+
+/* about + photo strip */
+.about{display:grid;gap:22px}
+.facts{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.fact{min-width:0;padding:16px 18px;border-radius:16px;background:var(--bg-2);border:1px solid var(--line)}
+.fact b{display:block;font-family:var(--display);font-size:32px;line-height:1;color:var(--red);font-weight:700}
+.fact span{font-size:14px;color:var(--muted)}
+.strip{display:grid;gap:10px;grid-template-columns:repeat(4,1fr)}
+.strip figure{margin:0;min-width:0;position:relative}
+.strip img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+.strip figcaption{position:absolute;left:10px;bottom:10px;padding:6px 10px;border-radius:999px;background:rgba(28,18,18,.78);color:#f7efe6;font-size:12px;font-weight:800;letter-spacing:.04em}
+@media (max-width:600px){.strip{grid-template-columns:repeat(2,1fr)}}
+
+/* wide stage banner */
+.banner{margin:0;min-width:0;display:grid;gap:12px}
+.banner img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 40%;border-radius:22px;border:1px solid var(--line)}
+@media (min-width:700px){.banner img{aspect-ratio:16/9}}
+.banner figcaption{font-size:15px;color:var(--muted);line-height:1.45}
+.banner figcaption b{color:var(--fg)}
+
+
+/* stickers */
+html,body{overflow-x:hidden}
+.band{position:relative}
+.band>.wrap{position:relative;z-index:1}
+.st{position:absolute;z-index:5;pointer-events:none;height:auto;width:calc(clamp(84px,13vw,170px) * var(--s,1));filter:drop-shadow(0 16px 28px rgba(0,0,0,.35));transform:rotate(var(--r,0deg));animation:st-float var(--d,6s) ease-in-out infinite}
+@keyframes st-float{0%,100%{transform:rotate(var(--r,0deg)) translateY(0)}50%{transform:rotate(calc(var(--r,0deg) + 8deg)) translateY(-12px)}}
+@media (prefers-reduced-motion:reduce){.st{animation:none}}
+/* desktop: stickers live only in the side gutters outside the 860px column */
+@media (min-width:1000px){
+  .st.L{left:calc(50% - 430px - 165px) !important;right:auto !important}
+  .st.R{right:calc(50% - 430px - 165px) !important;left:auto !important}
+}
+/* tablet + phone: stickers sit on the seam under a block, where only padding is */
+@media (max-width:999px){
+  .st{width:78px !important;top:auto !important;bottom:-30px !important;left:auto !important;right:-14px !important}
+  .st[data-m="tr2"]{width:90px !important;right:-24px !important}
+  .st[data-m="br"]{left:-16px !important;right:auto !important}
+  .st[data-m="lbig"]{width:92px !important;right:-26px !important}
+  .st[data-m="bl"]{left:-10px !important;right:auto !important}
+  .st[data-m="r"]{right:-26px !important}
+  .st[data-m="l"]{left:-18px !important;right:auto !important;width:72px !important}
+  .st[data-m="l2"]{width:84px !important}
+}
+
+/* rebuilt INSTACOIN slide */
+.slide-wrap{display:grid;gap:8px;min-width:0}
+.slide{container-type:inline-size;position:relative;aspect-ratio:16/9;width:100%;border-radius:14px;overflow:hidden;background:radial-gradient(120% 90% at 20% 30%,#1a1410 0%,#070605 55%,#000 100%);color:#f4ead8;font-family:var(--body);display:grid;grid-template-columns:38% 62%}
+.sl-left{position:relative;min-width:0}
+.sl-title{position:absolute;left:6cqw;top:5cqw;font-family:var(--display);font-weight:700;font-size:9.5cqw;line-height:1;letter-spacing:.02em;color:transparent;background:linear-gradient(180deg,#fff1c9,#f0c878 55%,#c8923a);-webkit-background-clip:text;background-clip:text}
+.sl-anna{position:absolute;left:4cqw;bottom:0;height:78%;width:auto;max-width:none}
+.sl-prof{position:absolute;left:1.5cqw;bottom:3cqw;width:30cqw;height:auto;border-radius:1cqw;box-shadow:0 1.2cqw 2.4cqw rgba(0,0,0,.6);transform:rotate(-5deg);transform-origin:left bottom;background:#fff}
+.sl-right{min-width:0;padding:4.2cqw 3.6cqw 2.4cqw 1cqw;display:grid;gap:1.1cqw;align-content:center}
+.case .slide b{color:#fff;font-weight:800}
+.case .slide .sl-niche{font-size:1.65cqw;line-height:1.35;color:#d9cdb8}
+.sl-box{display:grid;grid-template-columns:auto 1fr;gap:1.4cqw;align-items:center;padding:1.2cqw 1.8cqw;border:.18cqw solid #c9953f;border-radius:1.2cqw;background:rgba(255,255,255,.02)}
+.sl-box span{font-family:var(--display);font-size:2.9cqw;font-weight:600;color:#f0c878;white-space:nowrap;letter-spacing:.02em}
+.case .slide .sl-box p{font-size:1.6cqw;line-height:1.3;color:#e6dcc8}
+.sl-h{font-family:var(--display);font-size:3.1cqw;font-weight:700;color:#f7efe6;margin-top:.6cqw;letter-spacing:.02em}
+.case .slide .sl-p{font-size:1.6cqw;line-height:1.35;color:#d9cdb8}
+.case .slide .sl-p.sm{font-size:1.45cqw}
+.slide-cap{font-size:13px;color:var(--muted)}
+@media (max-width:600px){.slide{grid-template-columns:34% 66%}.sl-prof{display:none}.sl-anna{height:70%}}
+
+/* launch map table */
+.lmap{display:grid;gap:6px;margin-top:6px;font-size:14px}
+.lmap-head,.lmap-row{display:grid;grid-template-columns:1.6fr .7fr 1.4fr .9fr;gap:10px;align-items:center;padding:10px 14px;border-radius:12px;min-width:0}
+.lmap-head{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#f0c878;padding-block:4px}
+.lmap-row{background:rgba(247,239,230,.08);border:1px solid rgba(247,239,230,.14)}
+.lmap-row span{min-width:0;overflow-wrap:anywhere}
+.lmap-row span:first-child{font-weight:800;color:#f7efe6}
+.lmap-row span:nth-child(2){font-variant-numeric:tabular-nums;color:#f2d9c4}
+.lmap-row span:nth-child(3){color:#f2d9c4}
+.lmap-row span:last-child{display:inline-flex;align-items:center;gap:7px;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.lmap-row i{width:9px;height:9px;border-radius:50%;background:#f0c878;flex:none}
+.lmap-row.done span:last-child{color:#f0c878}
+.lmap-row.now{background:#f0c878;border-color:#f0c878}
+.lmap-row.now span{color:#1c1212}
+.lmap-row.now i{background:#a3191b;box-shadow:0 0 0 4px rgba(163,25,27,.25)}
+.lmap-row.next{opacity:.75}
+.lmap-row.next i{background:transparent;border:2px solid #f2d9c4}
+@media (max-width:600px){.lmap-head{display:none}.lmap-row{grid-template-columns:1fr auto;grid-template-areas:"a b" "c d";gap:4px 10px}.lmap-row span:nth-child(1){grid-area:a}.lmap-row span:nth-child(2){grid-area:b}.lmap-row span:nth-child(3){grid-area:c;font-size:13px}.lmap-row span:nth-child(4){grid-area:d;justify-self:end}}
+
+
+/* road scheme */
+.road-wrap{display:grid;gap:26px}
+.road{list-style:none;margin:0;padding:0 0 0 54px;position:relative;display:grid;gap:14px}
+.road::before{content:"";position:absolute;left:19px;top:22px;bottom:26px;width:4px;border-radius:2px;background:repeating-linear-gradient(to bottom,var(--gold) 0 10px,transparent 10px 20px)}
+.stop{position:relative;min-width:0}
+.pin{position:absolute;left:-58px;top:10px;width:50px;height:50px;border-radius:16px;transform:rotate(45deg);background:linear-gradient(145deg,#fff1c9 0%,#f0c878 45%,#c8923a 100%);box-shadow:0 0 0 7px var(--bg),0 10px 22px rgba(163,25,27,.22),inset 0 -3px 0 rgba(0,0,0,.12),inset 0 2px 0 rgba(255,255,255,.6);display:grid;place-items:center;z-index:1}
+.pin::after{content:attr(data-n);transform:rotate(-45deg);font-family:var(--display);font-weight:700;font-size:21px;color:#7a1214;line-height:1}
+.stop.start .pin,.stop.finish .pin{background:linear-gradient(145deg,#d93436 0%,#a3191b 50%,#6b0f11 100%);box-shadow:0 0 0 7px var(--bg),0 12px 24px rgba(163,25,27,.35),inset 0 -3px 0 rgba(0,0,0,.2),inset 0 2px 0 rgba(255,255,255,.25);width:56px;height:56px;border-radius:18px;left:-61px;top:8px}
+.stop.start .pin::after,.stop.finish .pin::after{color:#f7efe6;font-size:23px}
+.card{padding:16px 18px;border-radius:16px;background:var(--bg-2);border:1px solid var(--line);display:grid;gap:4px}
+.card b{font-weight:800;font-size:16px}
+.card p{font-size:14.5px;line-height:1.45;color:var(--muted)}
+.card.gold{background:linear-gradient(160deg,#9c1a1c,#5e0e10);border:0}
+.card.gold b{color:#f0c878}.card.gold p{color:#f2d9c4}
+@media (min-width:760px){.road{padding-left:0;gap:0}.road::before{left:calc(50% - 2px)}.stop{width:calc(50% - 40px);padding-block:8px}.stop:nth-child(odd){margin-left:auto}.stop:nth-child(odd) .pin{left:-65px}.stop:nth-child(even) .pin{left:auto;right:-65px}.stop.start .pin,.stop.finish .pin{left:auto;right:-68px}.stop:nth-child(even).finish .pin{left:auto;right:-68px}.stop:nth-child(odd).start .pin{left:-68px;right:auto}}
+
+/* handles under offer */
+.handles{font-size:15px;line-height:1.55;color:var(--band-muted);max-width:60ch}
+.handles a{color:#f0c878;font-weight:800;text-decoration:none}
+.handles .word{font-size:15px;padding:4px 10px;background:#f0c878;color:#1c1212;border-radius:8px}
+
+/* million art */
+.final-grid{grid-template-columns:1fr}
+@media (min-width:760px){.final-grid{grid-template-columns:1.1fr .9fr;align-items:center}}
+.million{position:relative;min-width:0;max-width:420px;justify-self:center;width:100%}
+.million svg{width:100%;height:auto;display:block;border-radius:26px;box-shadow:0 30px 60px rgba(0,0,0,.45);border:1px solid rgba(240,200,120,.35)}
+.million img{position:absolute;height:auto;pointer-events:none;filter:drop-shadow(0 14px 24px rgba(0,0,0,.45))}
+.million .m-rocket{width:22%;right:-6%;top:6%;transform:rotate(18deg);animation:st-float 5.4s ease-in-out infinite}
+.million .m-lemon{width:26%;left:-8%;bottom:-6%;transform:rotate(-16deg);animation:st-float 6.2s ease-in-out infinite}
+.million .m-money{width:18%;left:30%;top:36%;transform:rotate(-10deg);animation:st-float 4.8s ease-in-out infinite}
+.million .trail{stroke-dashoffset:0;animation:trail 3s linear infinite}
+@keyframes trail{to{stroke-dashoffset:-64}}
+@media (prefers-reduced-motion:reduce){.million img,.million .trail{animation:none}}
+
+/* photo beside a card */
+.with-photo{display:grid;gap:18px;align-items:stretch}
+.with-photo .ph{margin:0;min-width:0}
+.with-photo .ph img{width:100%;height:100%;max-height:360px;object-fit:cover;object-position:50% 20%;border-radius:18px}
+@media (min-width:700px){.with-photo{grid-template-columns:1fr 220px}.with-photo .ph img{max-height:none}}
+.final .with-photo .ph img{border:1px solid rgba(240,200,120,.35)}
+.hero h1{font-size:clamp(56px,13vw,124px);font-weight:700;color:#f7efe6;white-space:nowrap}
+.hero h1 span{display:block;color:transparent;background:linear-gradient(180deg,#fff1c9 0%,#f0c878 55%,#d6a04a 100%);-webkit-background-clip:text;background-clip:text}
+.hero .sub{font-size:clamp(18px,2.6vw,22px);color:var(--band-muted);max-width:34ch}
+.hero .orb{position:absolute;right:-120px;bottom:-200px;width:460px;height:460px;border-radius:50%;background:rgba(240,200,120,.08);pointer-events:none}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{font-weight:800;font-size:14px;padding:9px 14px;border-radius:999px;background:#f7efe6;color:#a3191b;white-space:nowrap}
+.pill.gold{background:#f0c878;color:#1c1212}
+.meta{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:15px;color:var(--band-muted)}
+.meta b{color:#f7efe6;font-weight:800}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 26px;border-radius:999px;font-family:var(--body);font-weight:800;font-size:17px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s ease}
+.btn:active{transform:scale(.98)}
+.btn:focus-visible{outline:3px solid var(--gold-soft);outline-offset:3px}
+.btn-gold{background:#f0c878;color:#1c1212}
+.btn-red{background:var(--red);color:#f7efe6}
+.btn-ghost{background:transparent;color:var(--band-fg);border:2px solid rgba(247,239,230,.55)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.cta-note{font-size:14px;color:var(--band-muted)}
+
+/* two columns */
+.cols{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.box{min-width:0;padding:22px;border-radius:18px;background:var(--bg-2);border:1px solid var(--line)}
+.box h3{margin-bottom:12px}
+.box ul{margin:0;padding-left:20px;display:grid;gap:8px}
+.box.no{border-style:dashed}
+
+/* list of what happens */
+.what{display:grid;gap:0;border-top:1px solid var(--line)}
+.what li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.what ol{margin:0;padding:0}
+.what .n{font-family:var(--display);font-size:28px;line-height:1;color:var(--red);font-weight:700;min-width:36px;font-variant-numeric:tabular-nums}
+.what b{display:block;font-weight:800;margin-bottom:4px}
+.what p{color:var(--muted);font-size:16px}
+
+/* cases */
+.case{display:grid;gap:18px;padding:24px;border-radius:22px;background:var(--bg-2);border:1px solid var(--line);min-width:0}
+.case-head{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:baseline;justify-content:space-between}
+.case .num{font-family:var(--display);font-size:clamp(40px,8vw,60px);line-height:1;color:var(--red);font-weight:700}
+.case .who{font-weight:800}
+.case .tag{font-size:13px;color:var(--muted);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.case p{color:var(--fg)}
+.shots{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.shots figure{margin:0;min-width:0}
+.shots img{border-radius:14px;border:1px solid var(--line);width:100%;height:auto}
+.shots figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.case.now{background:linear-gradient(160deg,#9c1a1c,#5e0e10);color:#f7efe6;border:0}
+.case.now .num,.case.now p{color:#f7efe6}
+.case.now .tag{color:#f0c878}
+.live{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#f0c878}
+.live i{width:10px;height:10px;border-radius:50%;background:#ff5a5a;box-shadow:0 0 0 4px rgba(255,90,90,.25);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(255,90,90,.25)}50%{box-shadow:0 0 0 9px rgba(255,90,90,.08)}}
+@media (prefers-reduced-motion:reduce){.live i{animation:none}.btn{transition:none}.hero h1 .lemon{animation:none}}
+
+/* takeaway */
+.take{display:grid;gap:14px;padding:26px;border-radius:22px;border:2px solid var(--gold);background:var(--bg-2)}
+.take h3{font-family:var(--display);text-transform:uppercase;font-size:26px;color:var(--red)}
+.take ol{margin:0;padding-left:22px;display:grid;gap:8px}
+
+/* offer */
+.offer{display:grid;gap:18px}
+.offer-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tile{min-width:0;padding:20px;border-radius:18px;background:rgba(247,239,230,.08);border:1px solid rgba(247,239,230,.18)}
+.tile .k{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#f0c878;margin-bottom:8px}
+.tile .v{font-family:var(--display);font-size:30px;line-height:1.05;font-weight:700;color:#f7efe6}
+.tile .s{margin-top:8px;font-size:15px;color:var(--band-muted)}
+.count{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;font-variant-numeric:tabular-nums}
+.count b{font-family:var(--display);font-size:34px;line-height:1;color:#f7efe6;font-weight:700}
+.count small{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--band-muted);display:block;margin-top:4px}
+.count .u{text-align:center}
+
+/* steps */
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.step{min-width:0;padding:20px;border-radius:18px;background:var(--bg-2);border:1px solid var(--line);display:grid;gap:8px}
+.step .s{font-family:var(--display);font-size:30px;color:var(--gold);font-weight:700;line-height:1}
+.step b{font-weight:800}
+.step p{color:var(--muted);font-size:15px}
+.word{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:var(--red);color:#f7efe6;font-weight:800;font-size:18px;letter-spacing:.02em}
+.word button{appearance:none;border:0;background:rgba(247,239,230,.18);color:#f7efe6;font:inherit;font-size:13px;font-weight:800;padding:6px 10px;border-radius:8px;cursor:pointer}
+.word button:focus-visible{outline:2px solid #f0c878;outline-offset:2px}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:26px;color:var(--red);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:10px;color:var(--muted)}
+
+/* final cta + footer */
+.final{text-align:left}
+.final h2{color:#f7efe6}
+.final .big{font-size:clamp(20px,3vw,26px);color:var(--band-muted);max-width:40ch}
+footer{padding-block:28px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer a{color:var(--red);font-weight:800;text-decoration:none}
+
+.toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);max-width:min(92vw,420px);padding:10px 14px;border-radius:12px;background:#f0c878;color:#1c1212;font-size:14px;font-weight:700;text-align:center;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:30}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (min-width:900px){.toast{bottom:28px}}
+
+/* sticky mobile CTA */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(28,18,18,.92);backdrop-filter:blur(8px);display:flex;gap:12px;align-items:center;justify-content:space-between;color:#f7efe6}
+.sticky .p{font-size:13px;line-height:1.3}
+.sticky .p b{display:block;font-size:15px}
+.sticky .btn{min-height:46px;padding:10px 18px;font-size:15px}
+@media (min-width:900px){.sticky{display:none}}
+body{padding-bottom:84px}
+@media (min-width:900px){body{padding-bottom:0}}
+</style>
+
+<header class="band band-red hero">
+  <div class="orb" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="eyebrow">Закритий Zoom · четвер, 5 листопада</p>
+      <h1>Шлях до <img class="lemon" src="img/lemon.png" alt="" width="416" height="406" aria-hidden="true"><span>мільйона</span></h1>
+      <p class="sub">Три реальні запуски з маленьких блогів і схема твого першого.</p>
+      <div class="pills" aria-label="Три запуски, які розберемо">
+        <span class="pill">500 переглядів → 9 000 €</span>
+        <span class="pill">8 запусків → 100 000 €</span>
+        <span class="pill gold">запуск прямо зараз</span>
+      </div>
+      <div class="meta">
+        <span><b>Коли:</b> четвер, 5.11, час узгодимо в групі</span>
+        <span><b>Формат:</b> Zoom, ~90 хв + запитання</span>
+        <span><b>Запис:</b> 48 годин</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#umovy">Забронювати місце</a>
+        <span class="cta-note">699 грн для учасниць диктанту до вівторка · 1 111 грн для всіх інших</span>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <div class="photo-stack">
+        <img class="portrait" src="img/ivanna-portrait.jpg" alt="Іванна Поліщук, студійний портрет у чорному жакеті" width="900" height="1200" fetchpriority="high">
+        <img class="shot" src="img/ivanna-profile.jpg" alt="Шапка профілю Іванни в Instagram: ivannaplshchuk, просування, особистий бренд, продажі, стратегія, масштаб; 9 478 підписників; 2 000 студентів" width="1320" height="920" loading="lazy">
+      </div>
+      <figcaption>
+        <b>Іванна Поліщук</b>
+        <span>Колись б'юті-майстер-бровист. Вийшла на дохід <strong>5 000 $</strong> уже в перший рік роботи в сфері.</span>
+        <span>Зараз продюсер та експерт з масштабування блогів. За останній рік разом із клієнтами та власними проєктами зробила запусків на <strong>понад 200 000 $</strong>.</span>
+        <span>Експерт у запусках, прогрівах та продажах в Instagram.</span>
+      </figcaption>
+    </figure>
+  </div>
+</header>
+
+<section class="band">
+  <img class="st R" src="img/lemon.png" alt="" aria-hidden="true" width="416" height="406" loading="lazy" style="right:5%;top:-70px;--r:-12deg;--s:1.1;--d:6.1s" data-m="tr">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Про що це</p>
+      <h2>Тобі не треба чекати тисячу переглядів</h2>
+      <p>Більшість майстринь роками сидить з думкою «колись запущу своє навчання». Чекають аудиторію, збирають анкети, знімають уроки, які ніхто не купив. А потім дивляться на запуск з 500 переглядів на 9 000 € і не вірять.</p>
+      <p>На цьому ефірі я розберу три реальні запуски по цифрах, скрінах і помилках. Не теорію про те, «як треба», а те, що зробили мої учениці з маленькими блогами і що роблю я сама прямо зараз. І в кінці ти вийдеш зі своєю схемою першого запуску.</p>
+    </div>
+    <div class="cols">
+      <div class="box">
+        <h3>✅ Для тебе, якщо</h3>
+        <ul>
+          <li>навчаєш офлайн або маєш 3+ запити «а ти навчаєш?»;</li>
+          <li>хочеш запустити перше онлайн-навчання чи групу;</li>
+          <li>у тебе до 1 000 переглядів сторіс і ти думаєш, що «ще рано».</li>
+        </ul>
+      </div>
+      <div class="box no">
+        <h3>❌ Не для тебе, якщо</h3>
+        <ul>
+          <li>ще немає клієнтів і запису. Тобі спочатку потрібні клієнти, а не запуск;</li>
+          <li>шукаєш кнопку «зароби мільйон без дій». Я показую модель, а робити будеш ти.</li>
+        </ul>
+      </div>
+    </div>
+    <figure class="banner">
+      <img src="img/stage-wide.jpg" alt="Іванна на сцені конференції, на екрані її слайд: ваш перший актив не кількість підписників" width="1450" height="1082" loading="lazy">
+      <figcaption><b>«Ваш перший актив не кількість підписників. Ваш перший актив це ви».</b> Зі сцени у Львові. На ефірі розкладемо, як цей актив перетворити на перший запуск.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band" style="padding-top:40px">
+  <img class="st L" src="img/lemon.png" alt="" aria-hidden="true" width="416" height="406" loading="lazy" style="left:3%;top:38%;--r:22deg;--s:.8;--d:5.6s" data-m="l">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Програма</p>
+      <h2>Що буде на ефірі</h2>
+    </div>
+    <div class="what">
+      <ol>
+        <li><span class="n">1</span><div><b>5 форматів запуску</b><p>І чому 4 з них тобі не підійдуть. Вебінар, особисті продажі, сторіс, директ, постійні продажі: що для кого.</p></div></li>
+        <li><span class="n">2</span><div><b>6 активів, за якими обирають формат</b><p>Перегляди, кейси, досвід запусків, комфорт у спілкуванні, продукт, чек. Виписуєш свої цифри прямо на ефірі.</p></div></li>
+        <li><span class="n">3</span><div><b>Ліля: 9 000 € на 500 переглядах</b><p>Як вона продала перше навчання і за той самий запуск виросла на +1 000 аудиторії майже без грошей на рекламу.</p></div></li>
+        <li><span class="n">4</span><div><b>Аня: від маленького блогу до 8 запусків</b><p>100 000 € сумарно і рекордний потік на 35 студенток майже на мільйон. Як мінявся формат з кожним запуском.</p></div></li>
+        <li><span class="n">5</span><div><b>Мій запуск зсередини</b><p>Що я роблю прямо зараз, що спрацювало, а що ні. З цифрами, які зазвичай не показують.</p></div></li>
+        <li><span class="n">6</span><div><b>Практика: твій формат</b><p>Визначаємо твою модель за шістьма активами і збираємо схему першого запуску на одній сторінці.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="padding-top:40px">
+  <img class="st R" src="img/lemon.png" alt="" aria-hidden="true" width="416" height="406" loading="lazy" style="right:2%;top:-50px;--r:8deg;--s:1.2;--d:4.9s" data-m="tr2">
+  <div class="wrap about">
+    <div class="stack">
+      <p class="eyebrow">Хто веде</p>
+      <h2>Я не розказую теорію, я роблю це сама</h2>
+      <p>Я починала з брів за 150 грн і майже без клієнтів. Зараз навчаю майстринь продавати через Instagram, запускати власне навчання і виходити з крісла. Тільки за жовтень: чотири сцени в різних містах України, два дні вебінару, подкаст і диктант у сторіс, який написало більше сотні людей.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>2 000+</b><span>студенток пройшли мої навчання</span></div>
+      <div class="fact"><b>4</b><span>виступи на конференціях за жовтень</span></div>
+      <div class="fact"><b>7 год</b><span>живого вебінару за два дні</span></div>
+      <div class="fact"><b>100+</b><span>дівчат написали диктант у сторіс</span></div>
+    </div>
+    <div class="strip">
+      <figure><img src="img/talk-lviv.jpg" alt="Іванна виступає зі сцени у Львові, за спиною її слайд" width="900" height="1200" loading="lazy"><figcaption>Львів</figcaption></figure>
+      <figure><img src="img/mykolaiv.jpg" alt="Іванна біля банера конференції «Точка зміни 4» у Миколаєві" width="900" height="1200" loading="lazy"><figcaption>Миколаїв</figcaption></figure>
+      <figure><img src="img/odesa-group.jpg" alt="Іванна зі спікерками конференції Beauty School Speakers в Одесі" width="900" height="1200" loading="lazy"><figcaption>Одеса</figcaption></figure>
+      <figure><img src="img/stage-lviv.jpg" alt="Іванна на сцені під фіолетовим світлом" width="900" height="1200" loading="lazy"><figcaption>Львів, сцена</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="padding-top:40px">
+  <img class="st L" src="img/lemon.png" alt="" aria-hidden="true" width="416" height="406" loading="lazy" style="left:1%;top:22%;--r:-24deg;--s:.9;--d:7.1s" data-m="l2">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Кейси</p>
+      <h2>Три запуски, які розберемо</h2>
+    </div>
+
+    <article class="case">
+      <div class="case-head">
+        <div><span class="tag">Ліля · швидкісне нарощування вій · Харків</span><div class="num">9 000 €</div></div>
+        <span class="who">до 500 переглядів сторіс · перший запуск</span>
+      </div>
+      <p>Запуск разом зі мною на 9 000 € при тому, що переглядів сторіс у неї було до 500. За цей же запуск вона виросла на +1 000 аудиторії з мінімальними витратами на рекламу. А оборот за вересень виріс зі 164 тисяч гривень, її попереднього максимуму, до 246 тисяч.</p>
+      <div class="shots">
+        <figure><img src="img/lilya-profile.jpg" alt="Профіль Лілі в Instagram: lily__lash, швидкісне нарощування вій, просування, курси, Харків" width="1600" height="1040" loading="lazy"><figcaption>Профіль Лілі, @lily__lash</figcaption></figure>
+        <figure><img src="img/lilya-message.jpg" alt="Повідомлення Лілі: до цього максимум був 164к, сьогодні вже 246к" width="1600" height="1272" loading="lazy"><figcaption>Її повідомлення про оборот за вересень</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-head">
+        <div><span class="tag">Анна Стрілець · брови, перманент, навчання, Reels · Кропивницький</span><div class="num">100 000 €</div></div>
+        <span class="who">8 запусків · аудиторія х3 · рекордний потік 35 студенток</span>
+      </div>
+      <p><b>Ніша:</b> майстер-бровист, яка не могла продавати свої продукти через слабкий особистий бренд і відсутність системи.</p>
+      <p><b>Точка А:</b> дохід до 1 000 $, відсутність онлайн-продуктів, страх та невпевненість.</p>
+      <p><b>Точка Б:</b> запусків на 100 000 €, сильний продукт, який знає увесь ринок, приріст аудиторії в х3, медійність та популярність.</p>
+      <p><b>Що зробили:</b> побудували сильне позиціонування, допомогли їй проявитися, створили новий продукт та впровадили систему запусків. Результат: близько 100 000 € за 8 запусків при невеликих охопленнях у блозі, рекордний потік на 35 студенток майже на мільйон гривень. Сьогодні Анна поєднує офлайн та онлайн, проводить івенти, виступає на сцені та працює як сильний експерт у своїй ніші.</p>
+      <div class="shots">
+        <figure><img src="img/anya-profile.jpg" alt="Профіль Анни Стрілець в Instagram: ann.strilets, брови, перманент, навчання, Reels, Кропивницький, 13,4 тис. підписників" width="1320" height="529" loading="lazy"><figcaption>Профіль Анни, @ann.strilets</figcaption></figure>
+      </div>
+      <div class="slide-wrap">
+        <div class="slide" role="img" aria-label="Слайд кейсу Анни Стрілець з презентації INSTACOIN">
+          <div class="sl-left">
+            <div class="sl-title">КЕЙС</div>
+            <img class="sl-anna" src="img/anna-cutout.png" alt="" width="473" height="900" loading="lazy">
+            <img class="sl-prof" src="img/anya-profile.jpg" alt="" width="1320" height="529" loading="lazy">
+          </div>
+          <div class="sl-right">
+            <p class="sl-niche"><b>Ніша</b> майстер бровист, яка не могла продавати свої продукти <b>через слабкий особистий бренд</b> і відсутність системи</p>
+            <div class="sl-box"><span>Точка А:</span><p><b>дохід до 1.000$</b>, <b>відсутність онлайн продуктів</b>, страх та невпевненість</p></div>
+            <div class="sl-box"><span>Точка Б:</span><p><b>запусків на 100 000€,</b> сильний продукт який знає увесь ринок, приріст аудиторії в х3, медійність та популярність</p></div>
+            <div class="sl-h">Що зробили?</div>
+            <p class="sl-p"><b>Ми побудували сильне позиціонування</b>, допомогли їй проявитися, створили новий продукт та <b>впровадили систему запусків</b></p>
+            <p class="sl-p sm"><b>Результат: близько 100 000€ за 8 запусків</b> при невеликих охопленнях в блозі. Пройшли шлях з повного нуля до створення продукту який продається на постійній основі. Сьогодні Анна <b>поєднує офлайн та онлайн</b>, проводить івенти, виступає на сцені та працює як <b>сильний експерт</b> у своїй ніші</p>
+          </div>
+        </div>
+        <p class="slide-cap">Слайд із презентації INSTACOIN</p>
+      </div>
+    </article>
+
+    <article class="case now">
+      <div class="stack">
+        <div class="case-head">
+          <div><span class="live"><i></i>Прямо зараз</span><div class="num">Мій запуск</div></div>
+          <span class="who">йде в ці дні</span>
+        </div>
+        <p>Я не розповідаю теорію, я запускаюсь тією самою логікою, яку розберемо на ефірі. Покажу зсередини: анкета, діагностики, вебінар, диктант, цей ефір. Що принесло продажі, що ні, і скільки це коштувало в часі та грошах.</p>
+        <div class="lmap" role="table" aria-label="Структура мого запуску">
+          <div class="lmap-head" role="row"><span>Етап</span><span>Дата</span><span>Навіщо</span><span>Статус</span></div>
+          <div class="lmap-row done" role="row"><span>Анкета передзапису</span><span>10.10</span><span>зібрати теплих</span><span><i></i>зроблено</span></div>
+          <div class="lmap-row done" role="row"><span>Діагностики</span><span>щодня</span><span>дзвінок → бронь</span><span><i></i>триває</span></div>
+          <div class="lmap-row done" role="row"><span>Вебінар «Для чайників»</span><span>23–24.10</span><span>довіра, перші оплати</span><span><i></i>зроблено</span></div>
+          <div class="lmap-row done" role="row"><span>Диктант у сторіс</span><span>27.10</span><span>показати помилки</span><span><i></i>зроблено</span></div>
+          <div class="lmap-row done" role="row"><span>Виступ в Одесі</span><span>30.10</span><span>нова аудиторія</span><span><i></i>зроблено</span></div>
+          <div class="lmap-row now" role="row"><span>Zoom «Шлях до мільйона»</span><span>05.11</span><span>розбір трьох запусків</span><span><i></i>ти тут</span></div>
+          <div class="lmap-row next" role="row"><span>Відкритий урок</span><span>11.11</span><span>подивитись зсередини</span><span><i></i>далі</span></div>
+          <div class="lmap-row next" role="row"><span>Старт потоку</span><span>12.11</span><span>перший день навчання</span><span><i></i>далі</span></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="band" style="padding-top:40px">
+  <img class="st R" src="img/lemon.png" alt="" aria-hidden="true" width="416" height="406" loading="lazy" style="right:4%;bottom:-56px;--r:16deg;--s:1;--d:5.3s" data-m="br">
+  <div class="wrap">
+    <div class="road-wrap">
+      <div class="stack">
+        <p class="eyebrow">З чим ти підеш</p>
+        <h2>Твій шлях за 90 хвилин ефіру</h2>
+        <p>Це не конспект. Це маршрут, який ти проходиш разом зі мною і виходиш зі своєю схемою в руках.</p>
+      </div>
+      <ol class="road">
+        <li class="stop start"><span class="pin" data-n="A"></span><div class="card"><b>Ти зараз</b><p>300–500 переглядів сторіс, є клієнти і запити «а ти навчаєш?», і думка «колись запущу, ще рано».</p></div></li>
+        <li class="stop"><span class="pin" data-n="1"></span><div class="card"><b>Рахуємо твої 6 активів</b><p>Перегляди, кейси, досвід запусків, комфорт у спілкуванні, продукт, чек. Виписуєш свої цифри, не чужі.</p></div></li>
+        <li class="stop"><span class="pin" data-n="2"></span><div class="card"><b>Обираємо формат запуску</b><p>Один із п'яти: вебінар, особисті продажі, сторіс, директ або постійні продажі. За активами, а не за настроєм.</p></div></li>
+        <li class="stop"><span class="pin" data-n="3"></span><div class="card"><b>Збираємо схему на одній сторінці</b><p>Ціль → ціна → кількість учениць → формат → три кроки. Через 30 хвилин у тебе це вже написано.</p></div></li>
+        <li class="stop"><span class="pin" data-n="4"></span><div class="card"><b>Виписуємо перші три дії</b><p>Що зробити наступного тижня з тими переглядами, які є. Без «спочатку наберу тисячу».</p></div></li>
+        <li class="stop finish"><span class="pin" data-n="Б"></span><div class="card gold"><b>Ти після ефіру</b><p>Знаєш свій формат, маєш схему першого запуску і перший крок на завтра. Далі тільки робити.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="band band-red" id="umovy">
+  <img class="st R" src="img/lemon.png" alt="" aria-hidden="true" width="416" height="406" loading="lazy" style="right:-6px;top:58%;--r:-20deg;--s:1.2;--d:6.4s" data-m="lbig">
+  <div class="wrap offer">
+    <p class="eyebrow">Умови</p>
+    <h2>Коли, скільки і як потрапити</h2>
+    <div class="offer-grid">
+      <div class="tile"><div class="k">Коли</div><div class="v">Четвер, 5 листопада</div><div class="s">Час узгодимо разом у групі учасниць</div></div>
+      <div class="tile"><div class="k">Для учасниць диктанту</div><div class="v">699 грн</div><div class="s">до вівторка, 3 листопада включно</div></div>
+      <div class="tile"><div class="k">Для всіх інших</div><div class="v">1 111 грн</div><div class="s">запис доступний 48 годин</div></div>
+    </div>
+    <div class="tile" id="deadline">
+      <div class="k">До кінця ціни 699 грн лишилось</div>
+      <div class="count" id="count" aria-live="polite">
+        <span class="u"><b id="d">—</b><small>дн</small></span>
+        <span class="u"><b id="h">—</b><small>год</small></span>
+        <span class="u"><b id="m">—</b><small>хв</small></span>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-gold msg" href="https://ig.me/m/ivannaplshchuk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">Написати в директ</a>
+      <a class="btn btn-ghost msg" href="https://t.me/ivannapolishchukk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">Або в Telegram</a>
+    </div>
+    <p class="handles">Пиши слово <span class="word">хочу лям</span> у директ <a class="msg" href="https://ig.me/m/ivannaplshchuk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">@ivannaplshchuk</a> або в Telegram <a class="msg" href="https://t.me/ivannapolishchukk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">@ivannapolishchukk</a>. Повідомлення вже буде набране, лишиться натиснути «надіслати». У відповідь скину реквізити, після оплати додам у закриту групу, де разом обираємо час і де буде посилання на Zoom.</p>
+  </div>
+</section>
+
+<section class="band" style="padding-top:64px">
+  <img class="st L" src="img/lemon.png" alt="" aria-hidden="true" width="416" height="406" loading="lazy" style="left:5%;bottom:-48px;--r:10deg;--s:.9;--d:4.6s" data-m="bl">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Часті питання</p>
+      <h2>Що ще запитують</h2>
+    </div>
+    <div class="faq">
+      <details><summary>У мене 200 переглядів, мені ще рано?</summary><p>Ні. Запуск залежить від твоїх шести активів, а не лише від переглядів. Саме це ми й розберемо.</p></details>
+      <details><summary>Буде запис?</summary><p>Так, запис буде доступний 48 годин, тільки для учасниць.</p></details>
+      <details><summary>Я не була на диктанті, можу прийти?</summary><p>Можеш. Для тебе ефір коштує 1 111 грн. Диктант був у сторіс 27 жовтня, він збережений у хайлайті «Диктант».</p></details>
+      <details><summary>Це продаж навчання?</summary><p>Це розбір трьох запусків і практика з твоїми цифрами. Про те, як працювати зі мною далі, я скажу в кінці одним реченням, і тільки для тих, кому це буде актуально.</p></details>
+      <details><summary>Кому це не підійде?</summary><p>Тим, хто шукає кнопку «зароби мільйон без дій». Я показую модель і логіку, а робити будеш ти.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band band-red final">
+  <img class="st R" src="img/lemon.png" alt="" aria-hidden="true" width="416" height="406" loading="lazy" style="right:2%;top:30%;--r:14deg;--s:1.15;--d:5.8s" data-m="r">
+  <div class="wrap stack-lg">
+    <div class="stack-lg">
+      <h2>Якщо ти три роки думаєш «колись запущу своє навчання»</h2>
+      <p class="big">Це той четвер. Напиши мені «хочу лям» у Telegram, і побачимось на ефірі.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold msg" href="https://t.me/ivannapolishchukk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">Забронювати місце в Telegram</a>
+        <span class="cta-note">@ivannapolishchukk · слово «хочу лям»</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Іванна Поліщук · наставниця б'юті-майстрів з Instagram, продажів і запусків</span>
+    <a href="https://www.instagram.com/ivannaplshchuk" target="_blank" rel="noopener">@ivannaplshchuk</a>
+  </div>
+</footer>
+
+<div class="sticky" role="region" aria-label="Бронювання">
+  <div class="p"><b>Шлях до мільйона · чт 5.11</b>699 грн до вівторка</div>
+  <a class="btn btn-gold msg" href="https://ig.me/m/ivannaplshchuk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">Хочу лям</a>
+</div>
+
+<div class="toast" id="toast" aria-live="polite">Слово «хочу лям» скопійовано, якщо поле порожнє, просто встав його</div>
+<script>
+(function(){
+  document.documentElement.style.scrollBehavior='smooth';
+  var toast=document.getElementById('toast');
+  document.querySelectorAll('a.msg').forEach(function(a){a.addEventListener('click',function(){try{navigator.clipboard&&navigator.clipboard.writeText('хочу лям').then(function(){toast.classList.add('on');setTimeout(function(){toast.classList.remove('on')},2600)}).catch(function(){})}catch(e){}})});
+  // 699 грн до кінця вівторка 3 листопада за Києвом (UTC+2 у листопаді)
+  var end=new Date('2026-11-03T21:59:59Z');
+  var d=document.getElementById('d'),h=document.getElementById('h'),m=document.getElementById('m'),box=document.getElementById('deadline');
+  function tick(){
+    var ms=end-Date.now();
+    if(ms<=0){box.innerHTML='<div class="k">Ціна 699 грн завершилась</div><div class="v" style="font-family:var(--display);font-size:30px;font-weight:700">Для всіх 1 111 грн</div>';return}
+    var mins=Math.floor(ms/60000);
+    d.textContent=Math.floor(mins/1440);
+    h.textContent=Math.floor(mins%1440/60);
+    m.textContent=mins%60;
+  }
+  tick();setInterval(tick,30000);
+
+  var btn=document.getElementById('copy');
+  if(btn){btn.addEventListener('click',function(){
+    var done=function(){btn.textContent='скопійовано';setTimeout(function(){btn.textContent='скопіювати'},1800)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText('хочу лям').then(done).catch(function(){sel()})}else{sel()}
+    function sel(){var r=document.createRange();r.selectNodeContents(btn.parentNode.firstChild||btn.parentNode);var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='виділено, скопіюй'}
+  })}
+})();
+</script>
+
+</body>
+</html>
