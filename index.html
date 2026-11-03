@@ -329,7 +329,7 @@ body{padding-bottom:84px}
       </div>
       <div class="cta-row">
         <a class="btn btn-gold" href="#umovy">Забронювати місце</a>
-        <span class="cta-note">699 грн для учасниць диктанту до вівторка · 1 111 грн для всіх інших</span>
+        <span class="cta-note">699 грн зі знижкою · без знижки 1 111 грн</span>
       </div>
     </div>
     <figure class="hero-photo">
@@ -526,20 +526,11 @@ body{padding-bottom:84px}
     <h2>Коли, скільки і як потрапити</h2>
     <div class="offer-grid">
       <div class="tile"><div class="k">Коли</div><div class="v">Четвер, 5 листопада</div><div class="s">Час оголосимо в закритому каналі ефіру</div></div>
-      <div class="tile"><div class="k">Для учасниць диктанту</div><div class="v">699 грн</div><div class="s">до вівторка, 3 листопада, 23:59</div></div>
-      <div class="tile"><div class="k">Для всіх інших</div><div class="v">1 111 грн</div><div class="s">запис доступний 48 годин</div></div>
-    </div>
-    <div class="tile" id="deadline">
-      <div class="k">До кінця ціни 699 грн лишилось</div>
-      <div class="count" id="count" aria-live="polite">
-        <span class="u"><b id="d">—</b><small>дн</small></span>
-        <span class="u"><b id="h">—</b><small>год</small></span>
-        <span class="u"><b id="m">—</b><small>хв</small></span>
-      </div>
+      <div class="tile"><div class="k">Ціна зі знижкою</div><div class="v">699 грн</div><div class="s">замість <s>1 111 грн</s></div></div>
+      <div class="tile"><div class="k">Без знижки</div><div class="v"><s>1 111 грн</s></div><div class="s">запис доступний 48 годин</div></div>
     </div>
     <div class="pay" id="pay">
-      <a class="btn btn-gold pay-btn" id="pay699" href="https://secure.wayforpay.com/button/ba182390d4e95" target="_blank" rel="noopener"><span>Оплатити 699 грн</span><small>я писала диктант</small></a>
-      <a class="btn btn-gold pay-btn" id="pay1111" href="https://secure.wayforpay.com/button/bee01aa0979e6" target="_blank" rel="noopener"><span>Оплатити 1 111 грн</span><small>для всіх</small></a>
+      <a class="btn btn-gold pay-btn" id="pay699" href="https://secure.wayforpay.com/button/ba182390d4e95" target="_blank" rel="noopener"><span>Оплатити 699 грн</span><small>зі знижкою, замість 1 111 грн</small></a>
     </div>
     <ol class="paysteps">
       <li>Оплачуєш карткою, Apple Pay або Google Pay. Це захищена сторінка WayForPay.</li>
@@ -560,7 +551,7 @@ body{padding-bottom:84px}
     <div class="faq">
       <details><summary>У мене 200 переглядів, мені ще рано?</summary><p>Ні. Запуск залежить від твоїх шести активів, а не лише від переглядів. Саме це ми й розберемо.</p></details>
       <details><summary>Буде запис?</summary><p>Так, запис буде доступний 48 годин, тільки для учасниць.</p></details>
-      <details><summary>Я не була на диктанті, можу прийти?</summary><p>Можеш. Для тебе ефір коштує 1 111 грн. Диктант був у сторіс 27 жовтня, він збережений у хайлайті «Диктант».</p></details>
+      <details><summary>Я не була на диктанті, можу прийти?</summary><p>Можеш. Ціна для всіх однакова: 699 грн зі знижкою. Диктант був у сторіс 27 жовтня, він збережений у хайлайті «Диктант».</p></details>
       <details><summary>Це продаж навчання?</summary><p>Це розбір трьох запусків і практика з твоїми цифрами. Про те, як працювати зі мною далі, я скажу в кінці одним реченням, і тільки для тих, кому це буде актуально.</p></details>
       <details><summary>Кому це не підійде?</summary><p>Тим, хто шукає кнопку «зароби мільйон без дій». Я показую модель і логіку, а робити будеш ти.</p></details>
     </div>
@@ -589,7 +580,7 @@ body{padding-bottom:84px}
 </footer>
 
 <div class="sticky" role="region" aria-label="Бронювання">
-  <div class="p"><b>Шлях до мільйона · чт 5.11</b><span id="stprice">від 699 грн, оплата онлайн</span></div>
+  <div class="p"><b>Шлях до мільйона · чт 5.11</b><span id="stprice">699 грн замість 1 111</span></div>
   <a class="btn btn-gold" href="#umovy">Оплатити</a>
 </div>
 
@@ -610,7 +601,7 @@ body{padding-bottom:84px}
     h.textContent=Math.floor(mins%1440/60);
     m.textContent=mins%60;
   }
-  tick();setInterval(tick,30000);
+  if(box){tick();setInterval(tick,30000);}
 
   var btn=document.getElementById('copy');
   if(btn){btn.addEventListener('click',function(){
