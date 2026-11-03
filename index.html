@@ -302,6 +302,12 @@ footer a{color:var(--red);font-weight:800;text-decoration:none}
 @media (min-width:900px){.sticky{display:none}}
 body{padding-bottom:84px}
 @media (min-width:900px){body{padding-bottom:0}}
+.pay{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.pay-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:18px 22px;min-height:72px;text-align:center}
+.pay-btn span{font-family:var(--display);font-size:22px;letter-spacing:.03em;text-transform:uppercase;line-height:1}
+.pay-btn small{font-size:13px;font-weight:700;opacity:.8}
+.paysteps{display:grid;gap:10px;margin:4px 0 0;padding-left:22px;color:var(--band-muted);font-size:15px;line-height:1.5}
+.paysteps a{color:var(--gold-soft);word-break:break-all}
 </style>
 
 <header class="band band-red hero">
@@ -519,8 +525,8 @@ body{padding-bottom:84px}
     <p class="eyebrow">Умови</p>
     <h2>Коли, скільки і як потрапити</h2>
     <div class="offer-grid">
-      <div class="tile"><div class="k">Коли</div><div class="v">Четвер, 5 листопада</div><div class="s">Час узгодимо разом у групі учасниць</div></div>
-      <div class="tile"><div class="k">Для учасниць диктанту</div><div class="v">699 грн</div><div class="s">до вівторка, 3 листопада включно</div></div>
+      <div class="tile"><div class="k">Коли</div><div class="v">Четвер, 5 листопада</div><div class="s">Час оголосимо в закритому каналі ефіру</div></div>
+      <div class="tile"><div class="k">Для учасниць диктанту</div><div class="v">699 грн</div><div class="s">до вівторка, 3 листопада, 23:59</div></div>
       <div class="tile"><div class="k">Для всіх інших</div><div class="v">1 111 грн</div><div class="s">запис доступний 48 годин</div></div>
     </div>
     <div class="tile" id="deadline">
@@ -531,11 +537,16 @@ body{padding-bottom:84px}
         <span class="u"><b id="m">—</b><small>хв</small></span>
       </div>
     </div>
-    <div class="cta-row">
-      <a class="btn btn-gold msg" href="https://ig.me/m/ivannaplshchuk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">Написати в директ</a>
-      <a class="btn btn-ghost msg" href="https://t.me/ivannapolishchukk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">Або в Telegram</a>
+    <div class="pay" id="pay">
+      <a class="btn btn-gold pay-btn" id="pay699" href="https://secure.wayforpay.com/button/ba182390d4e95" target="_blank" rel="noopener"><span>Оплатити 699 грн</span><small>я писала диктант</small></a>
+      <a class="btn btn-gold pay-btn" id="pay1111" href="https://secure.wayforpay.com/button/bee01aa0979e6" target="_blank" rel="noopener"><span>Оплатити 1 111 грн</span><small>для всіх</small></a>
     </div>
-    <p class="handles">Пиши слово <span class="word">хочу лям</span> у директ <a class="msg" href="https://ig.me/m/ivannaplshchuk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">@ivannaplshchuk</a> або в Telegram <a class="msg" href="https://t.me/ivannapolishchukk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">@ivannapolishchukk</a>. Повідомлення вже буде набране, лишиться натиснути «надіслати». У відповідь скину реквізити, після оплати додам у закриту групу, де разом обираємо час і де буде посилання на Zoom.</p>
+    <ol class="paysteps">
+      <li>Оплачуєш карткою, Apple Pay або Google Pay. Це захищена сторінка WayForPay.</li>
+      <li>Переходиш у закритий канал ефіру і тиснеш «Подати заявку»: <a href="https://t.me/+KEErMBIo8YIxMGZi" target="_blank" rel="noopener">t.me/+KEErMBIo8YIxMGZi</a></li>
+      <li>Ми звіряємо оплату і приймаємо тебе в канал. Там будуть час ефіру, посилання на Zoom і запис.</li>
+    </ol>
+    <p class="handles">Є питання до оплати? Пиши слово <span class="word">хочу лям</span> у директ <a class="msg" href="https://ig.me/m/ivannaplshchuk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">@ivannaplshchuk</a> або в Telegram <a class="msg" href="https://t.me/ivannapolishchukk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">@ivannapolishchukk</a>. Повідомлення вже буде набране, лишиться натиснути «надіслати». Відповім особисто.</p>
   </div>
 </section>
 
@@ -561,10 +572,10 @@ body{padding-bottom:84px}
   <div class="wrap stack-lg">
     <div class="stack-lg">
       <h2>Якщо ти три роки думаєш «колись запущу своє навчання»</h2>
-      <p class="big">Це той четвер. Напиши мені «хочу лям» у Telegram, і побачимось на ефірі.</p>
+      <p class="big">Це той четвер. Оплати місце онлайн, і побачимось на ефірі.</p>
       <div class="cta-row">
-        <a class="btn btn-gold msg" href="https://t.me/ivannapolishchukk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">Забронювати місце в Telegram</a>
-        <span class="cta-note">@ivannapolishchukk · слово «хочу лям»</span>
+        <a class="btn btn-gold" href="#umovy">Оплатити місце</a>
+        <span class="cta-note">оплата онлайн · або напиши «хочу лям» <a class="msg" href="https://t.me/ivannapolishchukk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">@ivannapolishchukk</a></span>
       </div>
     </div>
   </div>
@@ -578,8 +589,8 @@ body{padding-bottom:84px}
 </footer>
 
 <div class="sticky" role="region" aria-label="Бронювання">
-  <div class="p"><b>Шлях до мільйона · чт 5.11</b>699 грн до вівторка</div>
-  <a class="btn btn-gold msg" href="https://ig.me/m/ivannaplshchuk?text=%D1%85%D0%BE%D1%87%D1%83%20%D0%BB%D1%8F%D0%BC" target="_blank" rel="noopener">Хочу лям</a>
+  <div class="p"><b>Шлях до мільйона · чт 5.11</b><span id="stprice">від 699 грн, оплата онлайн</span></div>
+  <a class="btn btn-gold" href="#umovy">Оплатити</a>
 </div>
 
 <div class="toast" id="toast" aria-live="polite">Слово «хочу лям» скопійовано, якщо поле порожнє, просто встав його</div>
@@ -593,7 +604,7 @@ body{padding-bottom:84px}
   var d=document.getElementById('d'),h=document.getElementById('h'),m=document.getElementById('m'),box=document.getElementById('deadline');
   function tick(){
     var ms=end-Date.now();
-    if(ms<=0){box.innerHTML='<div class="k">Ціна 699 грн завершилась</div><div class="v" style="font-family:var(--display);font-size:30px;font-weight:700">Для всіх 1 111 грн</div>';return}
+    if(ms<=0){var p6=document.getElementById('pay699');if(p6)p6.remove();var sp=document.getElementById('stprice');if(sp)sp.textContent='1 111 грн, оплата онлайн';box.innerHTML='<div class="k">Ціна 699 грн завершилась</div><div class="v" style="font-family:var(--display);font-size:30px;font-weight:700">Для всіх 1 111 грн</div>';return}
     var mins=Math.floor(ms/60000);
     d.textContent=Math.floor(mins/1440);
     h.textContent=Math.floor(mins%1440/60);
@@ -610,5 +621,4 @@ body{padding-bottom:84px}
 })();
 </script>
 
-</body>
-</html>
+</body></html>
