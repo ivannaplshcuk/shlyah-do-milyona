@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Свій сайт за 30 хвилин</title>
+<meta name="description" content="Гайд від Іванни Поліщук: як зібрати свій сайт під будь-яку послугу за 30 хвилин без дизайнера, програміста й конструктора за гроші.">
+<meta property="og:title" content="Свій сайт за 30 хвилин під будь-яку послугу">
+<meta property="og:description" content="Покроково: ШІ пише сторінку, GitHub безкоштовно її показує, кнопки ведуть у твій директ і на оплату.">
+<meta property="og:image" content="../img/ivanna-portrait.jpg">
+<link rel="icon" href="../img/lemon.png" type="image/png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Manrope:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#f7efe6;--bg-2:#fbf6f0;--fg:#1c1212;--muted:#5e4a44;--red:#a3191b;--red-deep:#5e0e10;--gold:#d6a04a;--gold-soft:#f0c878;--line:rgba(163,25,27,.18);--band-fg:#f7efe6;--display:"Oswald","Arial Narrow",Impact,sans-serif;--body:"Manrope","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2{margin:0;font-family:var(--display);line-height:1.05;text-transform:uppercase}
+h1{font-size:clamp(40px,9vw,76px);font-weight:700}
+h2{font-size:clamp(28px,6vw,40px);font-weight:700}
+h3{margin:0;font-size:21px;font-weight:800}
+p{margin:0}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+.band{padding:52px 0}
+.band-red{background:linear-gradient(160deg,#9a1a1c 0%,#86161a 25%,#6e1114 50%,#5a0d10 75%,#4c0b0d 100%);color:var(--band-fg)}
+.eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.band-red .eyebrow{color:var(--gold-soft)}
+.stack{display:grid;gap:18px}
+.lead{font-size:20px;line-height:1.5}
+.step{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:26px 0;border-top:1px solid var(--line)}
+.step .n{width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;font-family:var(--display);font-weight:700;font-size:28px;display:flex;align-items:center;justify-content:center}
+.step .t{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:6px}
+.step ol,.step ul{margin:12px 0 0;padding-left:22px;display:grid;gap:8px}
+.note{background:var(--bg-2);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:14px}
+.note b{color:var(--red)}
+pre{white-space:pre-wrap;background:#1c1212;color:#f7efe6;border-radius:16px;padding:20px 22px;font:15px/1.5 ui-monospace,Menlo,Consolas,monospace;margin:14px 0 0}
+.chip{display:inline-block;border:1.5px solid var(--gold);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px;margin:4px 6px 0 0}
+.check{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.check li{padding-left:34px;position:relative}
+.check li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border:2px solid var(--red);border-radius:6px}
+.btn{display:inline-block;background:var(--gold);color:#1c1212;text-decoration:none;font-weight:800;padding:16px 26px;border-radius:14px;margin-top:10px}
+.time{font-family:var(--display);font-size:14px;letter-spacing:.08em;color:var(--gold);text-transform:uppercase}
+.foot{font-size:14px;color:var(--muted);padding:30px 0 50px;text-align:center}
+</style>
+</head>
+<body>
+
+<section class="band band-red">
+  <div class="wrap stack">
+    <p class="eyebrow">Подарунок від Іванни Поліщук</p>
+    <h1>Свій сайт за 30 хвилин<br>під будь-яку послугу</h1>
+    <p class="lead">Без дизайнера, без програміста, без конструктора за 20 $ на місяць. Так я зібрала сторінку для свого ефіру «Шлях до мільйона», і так само ти збереш сторінку під брови, вії, манікюр, консультацію чи своє навчання.</p>
+    <p>Що буде в кінці: посилання виду <b>твоє-ім'я.github.io/назва</b>, яке ставиш у шапку Instagram. На сторінці: хто ти, що пропонуєш, ціна, кнопка «написати в директ» і, якщо треба, кнопка оплати.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow">Спочатку в чому суть</p>
+    <h2 style="margin-top:8px">Сайт не продає. Продає те, що на ньому написано</h2>
+    <p style="margin-top:16px">У Лілі, моєї учениці, запуск на 9 000 € пройшов узагалі без сайту, з презентації. Тому не чекай від сторінки магії. Сайт потрібен для трьох речей: щоб у шапці профілю було одне посилання замість п'яти, щоб людина за 20 секунд зрозуміла, що ти робиш і скільки це коштує, і щоб з реклами чи сторіс був один зрозумілий крок: написати тобі або оплатити.</p>
+    <p style="margin-top:14px">Усе, що тобі треба: телефон або ноутбук, 30 хвилин і три безкоштовні штуки: ШІ-асистент (Claude або ChatGPT), акаунт на GitHub і твої фото.</p>
+  </div>
+</section>
+
+<section class="band" style="padding-top:0">
+  <div class="wrap">
+
+    <div class="step">
+      <div class="n">1</div>
+      <div>
+        <p class="t"><span class="time">5 хвилин</span> · Напиши, що ти продаєш</p>
+        <h3>Заповни 7 рядків текстом, як у директі</h3>
+        <p style="margin-top:8px">Не придумуй красиво. Пиши так, як пояснила б клієнтці. Це найважливіший крок, усе інше техніка.</p>
+        <pre>1. Хто я: ім'я, місто, скільки років у професії
+2. Що пропоную: одна послуга або одне навчання (не все одразу)
+3. Для кого: хто моя клієнтка і яка в неї проблема
+4. Що вона отримає: 3–5 пунктів результату
+5. Ціна і умови: скільки коштує, скільки триває, як записатись
+6. Чому я: 2–3 факти з цифрами (кількість клієнток, учениць, років, відгуки)
+7. Куди писати: мій нік в Instagram і Telegram</pre>
+        <div class="note"><b>Порада.</b> Одна сторінка = одна пропозиція. Якщо в тебе і брови, і навчання, зроби дві сторінки. Людина з реклами має побачити саме те, на що клікнула.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="n">2</div>
+      <div>
+        <p class="t"><span class="time">10 хвилин</span> · ШІ пише сторінку</p>
+        <h3>Відкрий Claude або ChatGPT і встав цей запит</h3>
+        <p style="margin-top:8px">Скопіюй повністю, підстав свої 7 рядків замість дужок. Фото додаси на наступному кроці.</p>
+        <pre>Зроби мені односторінковий сайт одним файлом index.html, українською, для мобільного телефону в першу чергу.
+
+Про мене і пропозицію:
+[встав сюди свої 7 рядків]
+
+Структура сторінки зверху вниз:
+1) заголовок з головною обіцянкою і короткий підзаголовок;
+2) кнопка «Написати мені» одразу під заголовком;
+3) для кого це і яку проблему вирішує;
+4) що входить / що отримає клієнтка, списком;
+5) ціна і умови;
+6) блок «про мене» з місцем під фото (файл img/me.jpg);
+7) 3–4 відповіді на часті питання;
+8) ще раз кнопка «Написати мені» внизу.
+
+Кнопка «Написати мені» веде на https://ig.me/m/МІЙ_НІК?text=ХОЧУ
+Друга кнопка «Написати в Telegram» веде на https://t.me/МІЙ_ТЕЛЕГРАМ?text=ХОЧУ
+
+Стиль: простий, чистий, великі заголовки, один акцентний колір [напиши свій колір], гарно читається на телефоні. Без зайвих анімацій. Усі стилі всередині файлу, без зовнішніх бібліотек, окрім Google Fonts. Нічого не вигадуй про мене: використовуй тільки факти, які я дала.</pre>
+        <div class="note"><b>Що перевірити в результаті.</b> Відкрий файл і прочитай його очима клієнтки: чи за 10 секунд зрозуміло, що ти робиш, для кого і що натиснути. Якщо ШІ додав «гарантований результат» або цифри, яких ти не давала, попроси прибрати. Усі правки робиш тим самим чатом: «зроби заголовок коротшим», «ціну постав вище», «додай блок з відгуками».</div>
+        <p style="margin-top:12px">Коли задоволена, попроси: <b>«Дай мені фінальний файл index.html для завантаження»</b> і збережи його на телефон або комп'ютер.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="n">3</div>
+      <div>
+        <p class="t"><span class="time">5 хвилин</span> · Безкоштовний хостинг</p>
+        <h3>Зареєструйся на GitHub і створи «папку» для сайту</h3>
+        <ol>
+          <li>Зайди на <a href="https://github.com/signup" target="_blank" rel="noopener">github.com/signup</a>, створи акаунт. Нік стане частиною адреси сайту, тому бери щось читабельне: <b>olena-brows</b>, а не <b>xx_lena_2001</b>.</li>
+          <li>Натисни зелену кнопку <b>New</b> (або «+» → New repository).</li>
+          <li>Repository name: назва сторінки латиницею, наприклад <b>navchannya</b> або <b>brovy</b>. Постав галочку <b>Public</b>. Натисни <b>Create repository</b>.</li>
+        </ol>
+        <div class="note"><b>Чому GitHub.</b> Це безкоштовно, без реклами, без «пробного періоду», сторінка живе роками, і її можна оновлювати за хвилину. Саме так зроблений мій сайт «Шлях до мільйона».</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="n">4</div>
+      <div>
+        <p class="t"><span class="time">5 хвилин</span> · Завантаж файл</p>
+        <h3>Додай index.html і фото</h3>
+        <ol>
+          <li>У новому репозиторії натисни <b>Add file → Upload files</b>.</li>
+          <li>Перетягни або вибери файл <b>index.html</b>.</li>
+          <li>Фото: створи папку <b>img</b> (при завантаженні напиши в полі назви <b>img/me.jpg</b>, GitHub сам створить папку). Фото до 1 МБ, інакше сторінка довго відкриватиметься.</li>
+          <li>Внизу натисни зелену <b>Commit changes</b>.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="n">5</div>
+      <div>
+        <p class="t"><span class="time">3 хвилини</span> · Увімкни сайт</p>
+        <h3>Settings → Pages</h3>
+        <ol>
+          <li>Зверху в репозиторії натисни <b>Settings</b>, зліва в меню <b>Pages</b>.</li>
+          <li>У блоці <b>Build and deployment</b> → Source обери <b>Deploy from a branch</b>, Branch: <b>main</b>, папка <b>/ (root)</b>. Натисни <b>Save</b>.</li>
+          <li>Зачекай 1–2 хвилини й онови сторінку. Зверху з'явиться адреса: <b>https://твій-нік.github.io/назва/</b></li>
+        </ol>
+        <div class="note"><b>Якщо замість сайту помилка 404:</b> перевір, що файл називається саме <b>index.html</b> (маленькими літерами) і лежить у корені, а не в папці. І зачекай ще 2 хвилини, перший раз Pages може підтягуватись довше.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="n">6</div>
+      <div>
+        <p class="t"><span class="time">2 хвилини</span> · Кнопки, які продають</p>
+        <h3>Директ з готовим повідомленням і оплата</h3>
+        <p style="margin-top:8px">Головний фокус мого сайту: людина натискає кнопку, і в неї вже набране повідомлення. Їй лишається тиснути «надіслати». Так ти знаєш, звідки вона прийшла, а бот у ManyChat може відповісти автоматично.</p>
+        <ul>
+          <li>Instagram: <b>https://ig.me/m/твій_нік?text=хочу</b></li>
+          <li>Telegram: <b>https://t.me/твій_нік?text=хочу</b></li>
+          <li>Оплата: у WayForPay (або monobank «Банка», Fondy) створи кнопку оплати, скопіюй посилання і дай його ШІ: «зроби кнопку «Оплатити 699 грн» з цим посиланням».</li>
+        </ul>
+        <div class="note"><b>Слово в повідомленні</b> замість «Привіт» дає тобі дві речі: ти бачиш, що людина з сайту, і можеш запустити автоматичну відповідь у ManyChat на це слово.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="n">7</div>
+      <div>
+        <p class="t"><span class="time">1 хвилина</span> · Постав посилання в шапку</p>
+        <h3>І більше ніколи не кажи «деталі в директі»</h3>
+        <p style="margin-top:8px">Instagram → редагувати профіль → посилання. Текст кнопки: не «сайт», а дія: «Записатись на брови», «Умови навчання», «Програма ефіру». У сторіс і Reels тепер один заклик: «посилання в шапці».</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="band band-red">
+  <div class="wrap stack">
+    <p class="eyebrow">Оновлення</p>
+    <h2>Змінити ціну або дату: 1 хвилина</h2>
+    <p>Відкрий файл index.html у репозиторії, натисни олівець (Edit), знайди через Ctrl+F потрібний текст, зміни, натисни Commit changes. Через хвилину сайт оновлений. Великі зміни робиш так: скидаєш ШІ старий файл і пишеш, що змінити, отримуєш новий, завантажуєш замість старого.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow">Чекліст перед тим, як ставити в шапку</p>
+    <ul class="check" style="margin-top:16px">
+      <li>Перший екран на телефоні: зрозуміло, що ти робиш, для кого і що натиснути</li>
+      <li>Ціна написана цифрою, а не «деталі в директі»</li>
+      <li>Є хоча б 2 факти з цифрами про тебе (роки, клієнтки, учениці)</li>
+      <li>Кнопка «Написати» працює і відкриває директ з готовим словом</li>
+      <li>Фото справжнє, твоє, обличчя видно</li>
+      <li>Немає «гарантований результат» і чужих цифр</li>
+      <li>Сторінку відкрила подруга з телефону і за 10 секунд переказала, що ти пропонуєш</li>
+    </ul>
+    <h2 style="margin-top:44px">Три помилки, які бачу найчастіше</h2>
+    <div class="stack" style="margin-top:16px">
+      <p><b>1. Сайт про все.</b> Брови, вії, навчання, консультації і курс на одній сторінці. Людина не розуміє, навіщо вона тут, і йде. Одна сторінка = одна пропозиція.</p>
+      <p><b>2. Немає ціни.</b> «Напишіть у директ, скажу» відсіює тих, хто платить, і залишає тих, хто питає. Ціна фільтрує за тебе.</p>
+      <p><b>3. Сайт замість сторіс.</b> Посилання в шапці ніхто не відкриє, якщо в сторіс ти про нього не говориш. Сайт закриває, прогрівають сторіс.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band-red">
+  <div class="wrap stack">
+    <p class="eyebrow">Що далі</p>
+    <h2>Сторінка є. Тепер потрібен запуск</h2>
+    <p>Якщо ти вже навчаєш або маєш 3+ запити «а ти навчаєш?», 8 листопада на закритому Zoom «Шлях до мільйона» розбираю три реальні запуски з маленьких блогів (Ліля: 9 000 € при 500 переглядах сторіс) і даю схему твого першого. 699 грн зі знижкою.</p>
+    <a class="btn" href="../">Подивитись програму ефіру</a>
+    <p style="font-size:14px;opacity:.8">Питання по гайду: напиши «САЙТ» у директ <a href="https://ig.me/m/ivannaplshchuk?text=%D0%A1%D0%90%D0%99%D0%A2">@ivannaplshchuk</a>, відповім особисто.</p>
+  </div>
+</section>
+
+<p class="foot">© Іванна Поліщук · цей гайд можна пересилати подругам-майстриням</p>
+</body></html>
